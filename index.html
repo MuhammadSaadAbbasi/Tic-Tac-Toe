@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="select">
+    <button class="single">
+      <i class="fas fa-user"></i>
+      <h2>Single Mode</h2>
+      <p>Play Against AI</p>
+    </button>
+    <button class="double">
+      <i class="fas fa-users"></i>
+      <h2>Multiplayer Mode</h2>
+      <p>Play Against Friend</p>
+    </button>
+  </div>
+
+  <div class="input">
+    <div class="startScreen">
+      <label for="name">Enter Name :</label>
+      <input id="name" type="text" placeholder="Enter Player Name">
+      <button onclick="start()">Start Game</button>
+      <button onclick="mainMenu()">Back</button>
+    </div>
+    <div class="mStartScreen">
+      <label for="name1">Player 1 (X) :</label>
+      <input id="name1" type="text" placeholder="Enter First Player ">
+      <label for="name2">Player 2 (O) :</label>
+      <input id="name2" type="text" placeholder="Enter Second Player ">
+      <button onclick="start()">Start Game</button>
+      <button onclick="mainMenu()">Back</button>
+    </div>
+  </div>
+
+  <div class="game">
+    <p class="turn">Play your Move</p>
+    <div class="slate">
+      <div class="play" data-index="0"></div>
+      <div class="play" data-index="1"></div>
+      <div class="play" data-index="2"></div>
+      <div class="play" data-index="3"></div>
+      <div class="play" data-index="4"></div>
+      <div class="play" data-index="5"></div>
+      <div class="play" data-index="6"></div>
+      <div class="play" data-index="7"></div>
+      <div class="play" data-index="8"></div>
+    </div>
+    <p class="result"></p>
+    <div class="end">
+      <button onclick="playAgain()">Play Again</button>
+      <button onclick="mainMenu()">Main Menu</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
