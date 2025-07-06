@@ -1,0 +1,9 @@
+# ✅ Count JavaScript files as primary
+*.js linguist-detectable=true
+
+# ✅ Count style.css (main stylesheet)
+index.html linguist-detectable=false
+
+# ❌ Ignore any optional/minor/minified CSS or JS in future
+assets/*.css linguist-detectable=false
+*.min.js linguist-detectable=false
